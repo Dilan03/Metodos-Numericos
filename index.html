@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="script.js" defer></script>
+  <link href="styles.css" rel="stylesheet">
+  <title>Tabs</title>
+</head>
+<body>
+  <div class="main-content">
+    <ul class="tabs">
+      <li data-tab-target="#home" class="active tab">FALSA POSICIÓN</li>
+      <li data-tab-target="#pricing" class="tab">NEWTON RAPHSON</li>
+    </ul>
+  
+    <div class="tab-content">
+  
+      <div id="home" data-tab-content class="active">
+        <h1>Método de Falsa Posición</h1>
+        <form action="" id="form">
+          <label for="fx">Función</label>
+          <input type="text" id="fx">
+          <label for="a">a</label>
+          <input type="text" id="a">
+          <label for="b">b</label>
+          <input type="text" id="b">
+          <input type="submit" value="Enviar">
+        </form>
+  
+        <div>
+          <div id="result" class="result"></div>
+          <table id="iterFP" class="table">
+          </table>
+        </div>
+      </div>
+  
+      <div id="pricing" data-tab-content>
+        <h1>Método de Newton Raphson</h1>
+        <form action="" id="formNR">
+          <label for="fxn">Función</label>
+          <input type="text" id="fxn">
+  
+          <label for="fxd">Función Derivada</label>
+          <input type="text" id="fxd">
+          
+          <label for="Xo">Xo</label>
+          <input type="text" id="Xo">
+  
+          <input type="submit" value="Enviar">
+        </form>
+        <div>
+          <div id="resultNR" class="result"></div>
+          <table id="iterNR" class="table">
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+@font-face {
+  src: url(fonts/Roboto-Regular.ttf);
+  font-family: Roboto-Regular;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.main-content {
+  width: 70vw;
+  min-height: 70vh;
+  background: white;
+  margin: 50px auto;
+}
+
+body {
+  background-color: rgb(237, 237, 237);
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  font-family: Roboto-Regular;
+}
+
+.result {
+  display: none;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #5ccb5f;
+  text-align: center;
+}
+
+.show {
+  display: block;
+}
+
+.table {
+  border-collapse: collapse;
+  margin: 25px auto;
+  font-size: 1em ;
+}
+
+.table td {
+  padding-left: 20px;
+}
+
+.table thead tr {
+  background-color: #008781;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1.5px solid rgb(179, 179, 179);
+}
+
+.tab {
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab.active {
+  background-color: #008781;
+  color: white;
+}
+
+.tab:hover {
+  background-color: #6ddbd7;
+  color: black;
+}
+
+.tab-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  min-height: 400px;
+  width: 90%;
+  margin: 0 auto;
+}
